@@ -10,7 +10,8 @@ body {
 }
 
 #about-me {
-	margin: 2% auto 9% auto;
+	display: none;
+	margin: 2% auto 0 auto;
 	height: 90px;
 	text-align: center;
 }
@@ -19,6 +20,7 @@ body {
 	text-decoration: none;
 	font-size: 20px;
 	font-weight: bold;
+	letter-spacing: 2px;
 	color: #e8e8e8;
 }
 
@@ -50,6 +52,9 @@ body {
 }
 
 #presentation {
+	display: none;
+	position: absolute;
+	top: 35%;
 	width: 100%;
 	text-align: center;
 	float: left;
@@ -70,8 +75,9 @@ h2{
 	opacity: 1;
 }
 
-#work {
-	left: 49%;
+#work {	
+	display: none;
+	left: 47.8%;
 	bottom: 5%;
 	position: absolute;
 }

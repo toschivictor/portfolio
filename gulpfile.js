@@ -21,9 +21,15 @@ gulp.task('css', function(){
     	.pipe(connect.reload());
 });
 
+gulp.task('js', function(){
+	gulp.src('./source/js/*')
+    	.pipe(connect.reload());
+});
+
 gulp.task('watch', function(){
 	gulp.watch('./source/index.html', ['html']);
 	gulp.watch('./source/css/style.css', ['css']);
+	gulp.watch('./source/js/*', ['js']);
 });
 
 gulp.task('default', ['connect', 'watch']);
