@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url('../images/bg.jpg') #000 center top no-repeat;
+	background-size: 100% auto;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+#about-me {
+	margin: 2% auto 9% auto;
+	height: 90px;
+	text-align: center;
+}
+
+#about-me a, #work a {
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	color: #e8e8e8;
+}
+
+#about-me a:hover, #work a:hover {
+	moz-transition-duration: 1s;
+	-webkit-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+	color: #fff;
+}
+
+.icon-about {
+	display: none;
+	margin: 5px auto 0 auto;
+	height: 50px;
+	width: 50px;
+	background: url("../images/user.png") no-repeat;
+	
+}
+
+.icon-work {
+	display: none;
+	margin: 10px auto 0 auto;
+	height: 50px;
+	width: 50px;
+	background: url("../images/code.png") no-repeat;
+	
+}
+
+#presentation {
+	width: 100%;
+	text-align: center;
+	float: left;
+	z-index: 999;
+}
+
+h1 {
+	font-size: 70px;
+	color: #eee;
+}
+
+h2{
+	padding-top: 0.4%;
+	font-size: 26px;
+	font-weight: normal;
+	color: #eee;
+	text-transform: uppercase;
+	opacity: 1;
+}
+
+#work {
+	left: 49%;
+	bottom: 5%;
+	position: absolute;
+}

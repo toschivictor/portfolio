@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Victor Toschi - Front-End Developer Portfolio</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div id="about-me">
+		<p><a href="">about me</a></p>
+		<div class="icon-about"></div>
+	</div>
+
+	<article id="presentation">
+		<h1>Victor Toschi</h1>
+		<h2>Front-end Developer</h2>
+	</article>
+
+	<div id="work">
+		<div class="icon-work"></div>
+		<p><a href="">works</a></p>
+	</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+	(function($) {
+		$('#about-me').find('a').hover(
+			function() {
+				$('.icon-about').fadeIn('slow');
+			}, function() {
+				$('.icon-about').fadeOut('fast');
+			}
+		);
+
+		$('#work').find('a').hover(
+			function() {
+				$('.icon-work').fadeIn('slow');
+			}, function() {
+				$('.icon-work').fadeOut('fast');
+			}
+		);
+	})(jQuery);
+</script>
+</body>
+</html>
